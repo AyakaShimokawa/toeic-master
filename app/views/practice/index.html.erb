@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf8">
+  <title>TOEIC900master</title>
+  <link rel="stylesheet" href="mystyles.css">
+</head>
+
+<body>
+<% current_question = Question.find(1) %>
+
+<header>
+  <h1>問題</h1>
+  <%= current_question.sentence %>
+</header>
+
+<p>
+  <form action="practice/judge" method="get">
+<p>
+  <% current_question.choices.shuffle.each do|choice| %>
+  <label><input type="radio" name="choice" value="<%= choice.id %>" checked><%= choice.sub_sentence %></label>
+  <br>
+<% end %></p>
+
+<p>
+  <input type="submit" value="送信する">
+</p>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>このサイトは下川綾香によって運営されています</footer>
+</body>
+</html>

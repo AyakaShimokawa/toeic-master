@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+q = Question.new(sentence: "ayaka (  ) happy." , explanation: "cuz...")
+q.save
+
+ans = Choice.new(question_id: q.id , sub_sentence: "is" , answer: "o")
+ans.save
+Choice.new(question_id: q.id , sub_sentence: "are" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "am" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "be" , answer: "x").save
+

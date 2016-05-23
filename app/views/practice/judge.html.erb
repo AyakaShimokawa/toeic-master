@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf8">
+  <title>TOEIC900master</title>
+  <link rel="stylesheet" href="mystyles.css">
+</head>
+
+<body>
+
+
+
+
+<% current_answer = Choice.find(@choice_id) %>
+<% if current_answer.answer == "o" %>
+  正解
+<% else %>
+    不正解
+  <%= current_answer.question.explanation %>
+    <header>
+      <h1>解説</h1>
+      </header>
+      <h1>和訳</h1>
+
+<% end %>
+
+</body>
+</html>

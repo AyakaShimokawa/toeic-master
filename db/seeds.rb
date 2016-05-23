@@ -5,13 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-q = Question.new(sentence: "ayaka (  ) happy." , explanation: "cuz...")
-q.save
-
-Choice.new(question_id: q.id , sub_sentence: "is" , answer: "o").save
-Choice.new(question_id: q.id , sub_sentence: "are" , answer: "x").save
-Choice.new(question_id: q.id , sub_sentence: "am" , answer: "x").save
-Choice.new(question_id: q.id , sub_sentence: "be" , answer: "x").save
 
 q = Question.new(sentence: "Operators are able to handle customer inquiries ------ the telephone or online." ,
                  explanation: "正解はover。空所の後ろはthe telephoneという名詞句なので、前には意味の合う前置詞を選ぶ。over the telephone「電話を通じて」という表現になる。")

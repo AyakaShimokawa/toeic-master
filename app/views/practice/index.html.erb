@@ -4,7 +4,15 @@
   <meta charset="utf8">
   <title>TOEIC900master</title>
   <link rel="stylesheet" href="mystyles.css">
+
 </head>
+
+<script type="text/javascript">
+  setTimeout('alert("10秒経過しました");  location.href = "/practice";',10000);
+
+</script>
+
+
 
 <body>
 <% current_question = Question.find(rand(Question.count) + 1) %>

@@ -8,4 +8,8 @@ class PracticeController < ApplicationController
     @choice_id = params[:choice]
   end
 
+  def timeout
+    @question_id = params[:question]
+  end
+
 end

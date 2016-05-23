@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<% current_question = Question.find(1) %>
+<% current_question = Question.find(rand(Question.count) + 1) %>
 
 <header>
   <h1>問題</h1>

@@ -1,0 +1,7 @@
+input#submit_button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+background-color: #000;
+color: #fff;
+border-style: none;
+}

@@ -3,35 +3,61 @@
 <head>
   <meta charset="utf8">
   <title>TOEIC900master</title>
-  <link rel="stylesheet" href="mystyles.css">
-
+  <link rel="stylesheet" href="/practice/styles.css">
 </head>
 
 <body>
 <% current_question = Question.find(rand(Question.count) + 1) %>
 
 <header>
-
+  <div style="margin: 0 0 1.5em;
+      padding: 0.8em;
+      border: 2px solid coral;
+      font-size: 1.143em;
+      font-weight: bold;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;">
   <% current_question = Question.find(@question_id) %>
 
   <h1>問題</h1>
   <%= current_question.sentence %>
+      </div>
 </header>
 
 <p>
   <form action="practice/judge" method="get">
 <p>
+  <div style="display: block;
+      float: left;
+      cursor: pointer;
+      width: 200px;
+      margin: 0;
+      padding: 10px;
+      background: navajowhite;
+      color: black;
+      font-size: 16px;
+      text-align: left;
+      line-height: 1;
+      transition: .2s;">
   <% current_question.choices.shuffle.each do|choice| %>
       <label><input type="radio" name="choice" value="<%= choice.id %>" checked><%= choice.sub_sentence %></label>
       <br>
-  <% end %></p>
+  <% end %>
+</div>
+</p>
 
-</form>
+</form><br><br><br><br><br>
 
 
-
-<a href= "/practice" >次の問題へ</a>
-
+<div style="padding: 15px 15px;
+    margin: 15px 50px 15px 200px;
+    font-size: 1.2em;
+    background-color: #000;
+    color: #fff;
+    border-style: none;">
+<a href= "/practice" ><div style="color: azure">次の問題へ</div></a>
+</div>
 
 
 <br>

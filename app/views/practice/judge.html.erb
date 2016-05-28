@@ -9,22 +9,33 @@
 <body>
 
 
+<header>
+  <div style="margin: 0 0 1.5em;
+      padding: 0.8em;
+      border: 2px solid coral;
+      font-size: 1.143em;
+      font-weight: bold;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;">
 
-
+    <h1>解説</h1>
 <% current_answer = Choice.find(@choice_id) %>
 <% if current_answer.answer == "o" %>
   正解
 <% else %>
     不正解
   <%= current_answer.question.explanation %>
-    <header>
-      <h1>解説</h1>
-      </header>
+      <% end %>
+  </div>
+</header>
 
 
-<% end %>
-
-<a href= "/practice" >次の問題へ</a>
+<p>
+<div>
+  <a href= "/practice" ><input id="submit_button" type="submit" name="submit" value="次の問題へ"></div></a>
+</div>
+</p>
 
 </body>
 </html>

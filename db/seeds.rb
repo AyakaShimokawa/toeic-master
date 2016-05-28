@@ -84,7 +84,7 @@ Choice.new(question_id: q.id , sub_sentence: "remains" , answer: "x").save
 Choice.new(question_id: q.id , sub_sentence: "remain" , answer: "x").save
 Choice.new(question_id: q.id , sub_sentence: "remained" , answer: "x").save
 
-q = Question.new(sentence: "Mr.Minegishi　has a solid reputation for ------ when negotiating contracts with clients.
+q = Question.new(sentence: "Mr.Minegishi has a solid reputation for ------ when negotiating contracts with clients.
 " , explanation: "正解はprofessionalism。空所直前にあるforは前置詞なので、前置詞とセットで用いられる名詞が必要。professionallyは副詞なので除外する。残りの名詞はそれぞれ、professionalism「専門性の高さ」、professional「プロ」、profession「専門職」という意味であり、文脈からprofessionalismを選ぶ。
 ")
 q.save

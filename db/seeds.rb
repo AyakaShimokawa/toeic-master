@@ -53,3 +53,74 @@ Choice.new(question_id: q.id , sub_sentence: "just" , answer: "o").save
 Choice.new(question_id: q.id , sub_sentence: "recently" , answer: "x").save
 Choice.new(question_id: q.id , sub_sentence: "alone" , answer: "x").save
 Choice.new(question_id: q.id , sub_sentence: "thoroughly" , answer: "x").save
+
+q = Question.new(sentence: "Mr.Minegishi was initially hired as junior accountant, but ------ to become the firm’s chief financial officer.
+" , explanation: "正解はwent on。空所直後にはto becomeという不定詞がある。不定詞の直前に置けるのは、went onのみである。go on to do「そのまま進んで〜する」という表現になる。
+")
+q.save
+
+Choice.new(question_id: q.id , sub_sentence: "went on" , answer: "o").save
+Choice.new(question_id: q.id , sub_sentence: "fell through" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "ended up" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "passed over" , answer: "x").save
+
+q = Question.new(sentence: "Recruit Lifestyle’s Supermarket publishes a weekly brochure featuring coupons that can be redeemed for discounts ------ store merchandise.
+" , explanation: "正解はon 。空所の直前にあるdiscountsは名詞、直後にあるstore merchandiseも名詞なので、意味のあう前置詞を選ぶ。discounts on「に対する割引」という表現になる。
+")
+q.save
+
+Choice.new(question_id: q.id , sub_sentence: "on" , answer: "o").save
+Choice.new(question_id: q.id , sub_sentence: "under" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "at" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "by" , answer: "x").save
+
+q = Question.new(sentence: "The training session was mandatory for Mr.Minegishi, but optional for the ------ of the branch staff.
+" , explanation: "正解はremainder。空所の直前にあるtheは冠詞、直後にはofがあるので、名詞のremainder「残りの人、もの」、remains「残がい」のどちらかが入る。ここでは文脈からremainderを選ぶ。the remainder of 「の残りの人、もの」という表現になる。
+")
+q.save
+
+Choice.new(question_id: q.id , sub_sentence: "remainder" , answer: "o").save
+Choice.new(question_id: q.id , sub_sentence: "remains" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "remain" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "remained" , answer: "x").save
+
+q = Question.new(sentence: "Mr.Minegishi　has a solid reputation for ------ when negotiating contracts with clients.
+" , explanation: "正解はprofessionalism。空所直前にあるforは前置詞なので、前置詞とセットで用いられる名詞が必要。professionallyは副詞なので除外する。残りの名詞はそれぞれ、professionalism「専門性の高さ」、professional「プロ」、profession「専門職」という意味であり、文脈からprofessionalismを選ぶ。
+")
+q.save
+
+Choice.new(question_id: q.id , sub_sentence: "professionalism" , answer: "o").save
+Choice.new(question_id: q.id , sub_sentence: "professional" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "professionally" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "profession" , answer: "x").save
+
+q = Question.new(sentence: "Based on the　reviews from critics and the reactions of audiences, the new film by Mr.Minegishi is ------ his most controversial work to date.
+" , explanation: "正解はarguably。空所がなくても文章は完成しているので、文章を修飾する副詞arguablyが入る。
+")
+q.save
+
+Choice.new(question_id: q.id , sub_sentence: "arguably" , answer: "o").save
+Choice.new(question_id: q.id , sub_sentence: "arguing" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "arguable" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "argued" , answer: "x").save
+
+q = Question.new(sentence: "No ------ had Mr.Minegishi stepped into his office than he received an urgent telephone call.
+" , explanation: "正解はsooner。空所の後ろにあるthanは比較級を導く表現なので、比較級のsoonerを入れる。No sooner〜than…「〜した途端に…」という表現になる。
+")
+q.save
+
+Choice.new(question_id: q.id , sub_sentence: "sooner" , answer: "o").save
+Choice.new(question_id: q.id , sub_sentence: "more" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "only" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "scarcely" , answer: "x").save
+
+q = Question.new(sentence: "Strict ------ to company safety standards is expected of all factory personnel.
+" , explanation: "正解はadherence。全て名詞なので、文脈に合うものを選ぶ。adherence　 to standards 「基準を厳格に守る」という表現になる。
+")
+q.save
+
+Choice.new(question_id: q.id , sub_sentence: "adherence" , answer: "o").save
+Choice.new(question_id: q.id , sub_sentence: "complacency" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "obeying" , answer: "x").save
+Choice.new(question_id: q.id , sub_sentence: "requirement" , answer: "x").save
+
